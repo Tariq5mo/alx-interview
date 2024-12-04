@@ -1,45 +1,142 @@
-# 0x09. Island Perimeter
+# Island Perimeter
+
+This project focuses on solving the "Island Perimeter" problem using Python. The goal is to calculate the perimeter of an island represented in a 2D grid.
 
 ## Table of Contents
-- [Overview](#overview)
-- [Learning Objectives](#learning-objectives)
+
+- [Introduction](#introduction)
+- [Concepts and Skills](#concepts-and-skills)
 - [Requirements](#requirements)
-- [Setup](#setup)
 - [Project Tasks](#project-tasks)
-  - [0. Island Perimeter](#0-island-perimeter)
 - [Usage](#usage)
+- [Resources](#resources)
 - [Author](#author)
 
+## Introduction
+
+The problem involves calculating the perimeter of a single island in a grid, where:
+
+- **0** represents water.
+- **1** represents land.
+- Each cell is a square with a side length of 1.
+- Cells are connected horizontally or vertically (not diagonally).
+
+**Assumptions**:
+
+- The grid is completely surrounded by water.
+- There is only one island without any lakes (internal water).
+
 ---
 
-## Overview
+## Concepts and Skills
 
-This project is part of the ALX Software Engineering curriculum focused on algorithms and data structures. It involves calculating the perimeter of an island represented in a 2D grid.
+### Key Topics Covered
 
----
+1. **2D Arrays (Matrices)**:
+   - Navigating and iterating through grids.
+   - Accessing adjacent cells horizontally and vertically.
 
-## Learning Objectives
+2. **Conditional Logic**:
+   - Identifying when a cell contributes to the perimeter.
 
-By completing this project, you will be able to:
-1. Navigate and manipulate 2D arrays.
-2. Apply conditional logic to solve geometric problems.
-3. Develop algorithms to count specific elements in a grid.
+3. **Algorithm Development**:
+   - Breaking down the problem into smaller tasks:
+     - Identifying land cells.
+     - Calculating their contribution to the perimeter.
+
+4. **Python Programming**:
+   - Utilizing nested loops and conditional statements.
+   - Following PEP 8 guidelines for code style.
 
 ---
 
 ## Requirements
 
-- **Environment**: Ubuntu 20.04 LTS
-- **Python Version**: Python 3.4.3
-- **Code Style**: PEP 8 (v1.7)
-- All files must:
-  - Start with `#!/usr/bin/python3`.
-  - Include proper documentation.
+### General
+
+- **Allowed editors**: `vi`, `vim`, `emacs`.
+- Code will be interpreted/compiled on **Ubuntu 20.04 LTS** using Python 3.4.3.
+- Adhere to the **PEP 8 style guide**.
+- No external module imports allowed.
+- All files should:
   - End with a new line.
-- You are not allowed to import any module.
+  - Be executable.
+  - Include proper documentation for modules and functions.
+
+### Repository Structure
+
+- **GitHub repository**: [alx-interview](https://github.com/Tariq5mo/alx-interview)
+- **Directory**: `0x09-island_perimeter`
+- **File**: `0-island_perimeter.py`
 
 ---
 
-## Setup
+## Project Tasks
 
-Clone the repository and navigate to the project directory:
+### **0. Island Perimeter**
+
+Create a function `def island_perimeter(grid):` that returns the perimeter of the island described in `grid`.
+
+#### Input Constraints
+
+- `grid` is a list of lists of integers.
+- Width and height of the grid do not exceed 100.
+
+#### Output
+
+The perimeter of the island.
+
+#### Example
+
+```python
+grid = [
+    [0, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0]
+]
+
+print(island_perimeter(grid))  # Output: 12
+```
+
+---
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Tariq5mo/alx-interview.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd 0x09-island_perimeter
+   ```
+
+3. Run the example script:
+
+   ```bash
+   ./0-main.py
+   ```
+
+---
+
+## Resources
+
+- **[Python Official Documentation](https://docs.python.org/3/tutorial/)**:
+  - Nested lists.
+- **GeeksforGeeks**:
+  - Multi-dimensional arrays in Python.
+- **TutorialsPoint**:
+  - Python lists and their manipulation.
+- **YouTube**:
+  - Tutorials on 2D arrays and grid traversal.
+
+---
+
+## Author
+
+This project was completed by **Tariq Omer**, a student of the ALX Software Engineering program specializing in back-end development. Connect with me on [GitHub](https://github.com/Tariq5mo).
